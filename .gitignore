@@ -1,0 +1,40 @@
+# --- Secrets: never commit ---
+.env
+.env.*
+*.pem
+*.key
+*.pfx
+*.p12
+credentials.json
+*_rsa
+*_rsa.pub
+*.tfstate
+*.tfstate.*
+.terraform/
+
+# --- Private material: raw exports with IDs, emails, tenant details ---
+private/
+
+# --- Python ---
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# --- Node ---
+node_modules/
+
+# --- Notebooks ---
+.ipynb_checkpoints/
+
+# --- Large model weights and datasets ---
+*.pt
+*.pth
+*.bin
+*.safetensors
+*.onnx
+*.ckpt
+
+# --- OS clutter ---
+.DS_Store
+Thumbs.db
