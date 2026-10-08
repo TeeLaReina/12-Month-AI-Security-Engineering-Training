@@ -24,7 +24,7 @@ No cloud infrastructure is created in Phase 0. Everything runs on free compute a
 
 - [x] Repository created
 - [x] Git installed and configured on the Ubuntu laptop (noreply email, `main` as default branch)
-- [ ] SSH key added to GitHub for the Ubuntu laptop
+- [x] SSH key added to GitHub for the Ubuntu laptop
 - [ ] Git set up on the Windows gaming PC
 
 ## Community
