@@ -16,7 +16,9 @@
 | Purchased | 6 |
 | Assigned | 5 |
 | Available | 1 |
-| Term ends | 20 August 2027 (set to cancel on expiration) |
+| Term ends | Recorded as 20 August 2027 (set to cancel on expiration). **Corrected 13 Oct 2026:** billing was monthly, not yearly; see change log below |
+
+> **Change log, 13 October 2026:** the P2 licences were billed monthly, and the last period has lapsed. **There are currently no active P2 licences.** Plan: repurchase when a P2-dependent lab is scheduled, then reduce to 2 licences (one for the tenant owner, one assigned per project). Per Microsoft Learn, existing Conditional Access policies are not disabled or deleted when licences lapse; they can be viewed and deleted but not edited. The risk-based policies below (CA-05, CA-07, CA-08, CA-09) depend on P2. Re-capture this baseline after the licence change.
 
 ### P2 holders
 
@@ -66,4 +68,4 @@ All member accounts are cloud-only (no on-premises sync).
 
 - 
 - 
-- 
+-
