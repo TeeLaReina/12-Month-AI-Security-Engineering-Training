@@ -33,7 +33,7 @@ No cloud infrastructure is created in Phase 0. Everything runs on free compute a
 - [x] garak Discord
 - [x] OWASP GenAI Security Project Slack (#project-genai)
 - [x] Azure Nigeria Community (Meetup)
-- [ ] Hacker Proof HQ
+- [x] Hacker Proof HQ (LinkedIn follow; no private community)
 
 ## Reading (orientation level)
 
