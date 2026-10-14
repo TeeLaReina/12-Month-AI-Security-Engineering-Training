@@ -15,7 +15,7 @@ No cloud infrastructure is created in Phase 0. Everything runs on free compute a
 ## Track B - Cloud
 
 - [x] Google Cloud account (existing)
-- [ ] Azure: free services available on the account recorded
+- [x] Azure: free services recorded (12-month free services active until 13 Sep 2027; none in use)
 - [ ] DigitalOcean access confirmed (nothing created)
 - [x] Entra ID tenant baseline documented: see [entra-tenant-baseline.md](entra-tenant-baseline.md)
 - AWS: deliberately deferred until Track B needs it
