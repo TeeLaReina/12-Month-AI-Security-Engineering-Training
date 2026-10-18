@@ -10,13 +10,13 @@ No cloud infrastructure is created in Phase 0. Everything runs on free compute a
 - [x] Kaggle account (free GPU)
 - [x] Google Colab access confirmed
 - [ ] Python refresher: numpy, pandas, Jupyter
-- [ ] Gaming PC GPU model and driver recorded
+- [x] Gaming PC GPU model and driver recorded
 
 ## Track B - Cloud
 
 - [x] Google Cloud account (existing)
 - [x] Azure: free services recorded (12-month free services active until 13 Sep 2027; none in use)
-- [ ] DigitalOcean access confirmed (nothing created)
+- [x] DigitalOcean access confirmed (nothing created)
 - [x] Entra ID tenant baseline documented: see [entra-tenant-baseline.md](entra-tenant-baseline.md)
 - AWS: deliberately deferred until Track B needs it
 
@@ -26,7 +26,7 @@ No cloud infrastructure is created in Phase 0. Everything runs on free compute a
 - [x] Git installed and configured on the Ubuntu laptop (noreply email, `main` as default branch)
 - [x] SSH key added to GitHub for the Ubuntu laptop
 - [x] GitHub Projects board created, linked to the repo and made public
-- [ ] Git set up on the Windows gaming PC
+- [x] Git set up on the Windows gaming PC
 
 ## Community
 
