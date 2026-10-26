@@ -1,6 +1,6 @@
 # Phase 0 - Orientation (6 – 19 October 2026)
 
-**Status:** in progress
+**Status:** complete (19 October 2026)
 
 No cloud infrastructure is created in Phase 0. Everything runs on free compute and free accounts.
 
@@ -63,3 +63,23 @@ No cloud infrastructure is created in Phase 0. Everything runs on free compute a
 
 **Real-world link**
 - Barracuda (7 Oct 2026) - phishing emails hiding prompt injections aimed at AI inbox assistants
+
+
+### 19 October 2026 - Week 2, setup, hygiene and habits
+
+**What I did**
+- Set up Git and a separate SSH key on my Windows PC, so I now work from two machines
+- Built a public GitHub Projects board and started a /following/ log for five AI security practitioners
+- Forked Sigma, garak and PyRIT, read their contributing guides, and created a Gray Swan Arena account
+- Audited my Azure subscription and recorded which free services are available
+- Read the MITRE ATLAS introduction and the NIST AI RMF overview
+
+**What I learned**
+- **Run `git diff` before every commit.** An earlier commit silently deleted half my Phase 0 README. Git still had the old version, so nothing was lost, but a diff would have shown it in red before it was ever committed.
+- **"Deleted" isn't always deleted.** I thought an old lab was gone, but a public IP and a private endpoint were still running, attached to nothing. I exported the resource list first, kept what was free, removed what wasn't, and set a budget alert.
+- **Credential rotation, done properly.** I lost the passphrase to an SSH key. It can't be recovered, so I matched fingerprints to find the right key, created a new one, revoked the old one on GitHub, tested, then cleaned up.
+- **MITRE ATLAS:** tactics are the attacker's *goals*; techniques are *how* they reach them.
+- **NIST AI RMF:** Govern, Map, Measure, Manage. I first guessed "Mitigate" for the third, but it's Measure: you can't manage a risk you haven't measured.
+
+**Key takeaway**
+- Most of security is hygiene: knowing what's running, what's trusted, and checking before you commit.

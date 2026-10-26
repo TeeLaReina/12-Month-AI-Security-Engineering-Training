@@ -11,7 +11,7 @@ This repo is the public record: code, notes, screenshots, broken-then-fixed writ
 
 ## Progress
 
-- [ ] Phase 0 - Orientation (Oct 2026)
+- [x] Phase 0 - Orientation (Oct 2026)
 - [ ] Domain 1 - ML/AI Fundamentals for Security Engineers (Months 1–3)
 - [ ] Domain 2 - AI-Specific Attack Surface (Months 4–5)
 - [ ] Domain 3 - AI Red Teaming (Months 6–7)
