@@ -92,6 +92,8 @@ image (28×28 grid)
 | `NameError: name 'train_loader' is not defined` | The cell that creates the DataLoaders had not been added/run | Added the DataLoader cell before the model and ran the notebook top to bottom |
 | Round 1 accuracy was 88% instead of about 84% | I re-ran only the training cell, so it kept training an already-trained model; the seed had no effect | Runtime → Restart session and run all |
 | Results changed every run | Random starting weights and shuffling | Set `torch.manual_seed(42)` at the top, before anything random happens |
+
+
 **The break:** the training loop asked for `train_loader`, which didn't exist yet, because the DataLoader cell had not been run.
 
 ![Colab error: NameError, name train_loader is not defined](screenshots/01-nameerror-train-loader.png)
