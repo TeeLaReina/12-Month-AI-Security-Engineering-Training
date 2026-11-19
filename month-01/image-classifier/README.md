@@ -78,6 +78,11 @@ image (28×28 grid)
 **What this shows:** the model is strong on items with distinctive shapes (bags, footwear, trousers) and weak on upper-body garments (shirt, coat, T-shirt, pullover), which look alike at 28×28 in greyscale. The overall 87.9% hides a class the model gets wrong one time in three.
 
 > Note: the printed loss is from the last batch of each round only, so it jumps around. Test accuracy is the reliable measure.
+**The working notebook** after a fresh "Restart session and run all" (seed 42):
+
+![Final notebook, part 1: setup, data loading, DataLoaders and the model](screenshots/02-final-notebook-part1.png)
+
+![Final notebook, part 2: five training rounds reaching 87.9% test accuracy, and per-class accuracy](screenshots/03-final-notebook-part2.png)
 
 ## 4. What broke and how I fixed it
 
@@ -87,6 +92,9 @@ image (28×28 grid)
 | `NameError: name 'train_loader' is not defined` | The cell that creates the DataLoaders had not been added/run | Added the DataLoader cell before the model and ran the notebook top to bottom |
 | Round 1 accuracy was 88% instead of about 84% | I re-ran only the training cell, so it kept training an already-trained model; the seed had no effect | Runtime → Restart session and run all |
 | Results changed every run | Random starting weights and shuffling | Set `torch.manual_seed(42)` at the top, before anything random happens |
+**The break:** the training loop asked for `train_loader`, which didn't exist yet, because the DataLoader cell had not been run.
+
+![Colab error: NameError, name train_loader is not defined](screenshots/01-nameerror-train-loader.png)
 
 ## 5. What I learned
 
