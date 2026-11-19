@@ -1,4 +1,4 @@
-# Month 1 — FashionMNIST Image Classifier
+# Month 1 - FashionMNIST Image Classifier
 
 A small neural network, built and trained in PyTorch, that looks at 28×28 greyscale pictures of clothing and decides which of 10 clothing types each one is.
 
@@ -9,7 +9,7 @@ This is the first model in my 12-month AI Security Engineering training. I built
 ## 1. What it does
 
 - **Input:** a 28×28 greyscale image of a clothing item (from the FashionMNIST dataset).
-- **Output:** one of 10 classes — T-shirt/top, Trouser, Pullover, Dress, Coat, Sandal, Shirt, Sneaker, Bag, Ankle boot.
+- **Output:** one of 10 classes - T-shirt/top, Trouser, Pullover, Dress, Coat, Sandal, Shirt, Sneaker, Bag, Ankle boot.
 - **Data:** 60,000 training images the model learns from, and 10,000 test images kept hidden until evaluation.
 
 ## 2. How it learns
@@ -18,7 +18,7 @@ This is the first model in my 12-month AI Security Engineering training. I built
 
 ```
 image (28×28 grid)
-   │  Flatten — unroll the grid into one line
+   │  Flatten - unroll the grid into one line
    ▼
 784 numbers (one per pixel)
    │  Linear 784 → 512, then ReLU
@@ -29,7 +29,7 @@ image (28×28 grid)
 512 numbers
    │  Linear 512 → 10
    ▼
-10 scores — the highest score is the model's guess
+10 scores - the highest score is the model's guess
 ```
 
 - **Flatten:** turns the 28×28 grid into a line of 784 numbers so the layers can read it.
@@ -50,7 +50,7 @@ image (28×28 grid)
 
 **Setup:** PyTorch 2.14.1 (CUDA build), Google Colab T4 GPU, seed 42, batch size 64, Adam (lr = 0.001), 5 epochs.
 
-**Final test accuracy: 87.9%** — reproducible: two full runs from a fresh session gave identical results.
+**Final test accuracy: 87.9%** - reproducible: two full runs from a fresh session gave identical results.
 
 | Round | Test accuracy |
 |---|---|
